@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            margin: 20px auto;
+            perspective: 1000px;
+            position: relative;
+        }
+        .box .box-img{
+            height: 100%;
+            width: 100%;
+            transition: all 0.6s ease;
+        }
+        .box .box-img img{
+            width: 400px;
+            height: 400px;
+        }
+        .box-content{
+            height:0;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color:white;
+            text-align: center;
+            box-sizing: border-box;
+            background: linear-gradient(-50deg,rgba(7, 154, 252, 0.24),rgba(238, 7, 199, 0.247));
+            transition: all 0.6s ease;
+            overflow: hidden;
+        }
+        .box:hover .box-content{
+            height: 100%;
+        }
+        .box-content h2,p{
+            padding: 30px;
+        }
+        .box-content .socil a{
+            display: inline-block;
+            font-size: 25px;
+            color: rgba(240, 233, 233,0.3);
+            height: 40px;
+            width: 40px;
+            background-color: rgba(56, 55, 55,0.3);
+            border-radius: 50%;
+            line-height: 42px;
+            transition: all 0.2s ease;
+        }
+        .box-content .socil a:hover{
+             color: white;
+             background: linear-gradient(45deg,rgba(83, 83, 204, 0.705),rgba(69, 129, 109, 0.671));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-img">
+            <img src="img/rose.jpg" alt="">
+        </div>
+        <div class="box-content">
+            <h2>ROSE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus totam ea animi accusamus explicabo culpa debitis doloremque distinctio consectetur.</p>
+        
+        <div class="socil">
+         <a href=""><i class="fab fa-facebook-f"></i></a>
+         <a href=""><i class="fab fa-whatsapp"></i></a>
+         <a href=""><i class="fab fa-instagram"></i></a>
+         <a href=""><i class="fab fa-twitter"></i></a>
+         </div>
+    </div>
+        
+    </div>
+</body>
+</html>
